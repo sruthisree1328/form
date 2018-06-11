@@ -1,24 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
     <link rel="stylesheet" href="css/app.css">
-    <title>Form validation</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
 </head>
-<body>
-    <h3> EMPLOYEE DETAILS </h3> 
-    <script src="js/app.js"></script>
-    <form>
-        <label for="First name"> First name </label>
-        <input type="text" id="first name">
-        <label for="Full name"> Full name </label>
-        <input type="text" id="Full name">
-        <label for="Designation">Designation</label>
-        <input type="text" id="Designation">
-        
+
+<body style="background-color:powderblue;">
+    <h3 style="text-align: center">Employee ID Card Form</h3>
+    <form novalidate>
+        <div class="input-group">
+            <label for="firstName" class="col-2 col-form-label">First Name</label>
+           <div class="col-5">
+            <input type="text" id="firstName" required>
+            <span class="span-for-errors" id="errForFirstName">Please enter your preferred name as first name</span>
+        </div>
+    </div>
+        <div class="input-group">
+            <label for="fullName" class="col-2 col-form-label">Full Name</label>
+            <div class="col-5">
+            <input type="text" id="fullName" required>
+            <span class="span-for-errors" id="errForFullName">Please enter your full name</span>
+        </div>
+    </div>
+        <div class="input-group">
+            <label for="Designation" class="col-2 col-form-label">Designation</label>
+            <div class="col-5">
+            <input type="text" id="Designation" required>
+            <span class="span-for-errors" id="errForDesignation">Please enter your Designation</span>
+        </div>
+        </div>
+        <div class="input-group">
+            <label for="employee_code" class="col-2 col-form-label">Employee code</label>
+            <div class="col-5">
+            <input type="text" id="employee_code" required>
+            <span class="span-for-errors" id="errForemployee_code">Please enter your Employee code</span>
+        </div>
+        </div>
+        <div class="input-group">
+            <label for="bloodgroup" class="col-2 col-form-label">Blood group</label>
+            <div class="col-5">
+            <input type="text" id="bloodgroup" required>
+            <span class="span-for-errors" id="errForbloodgroup">Please enter your bloodgroup</span>
+        </div>
+        </div>
+        <div class="input-group">
+            <label for="reason" class="col-2 col-form-label">Reason For Issue</label>
+            <div class="col-5">
+            <input type="radio" name="reason" value="Newemployee" required>Newemployee<br>
+            <input type="radio" name="reason" value="Lost"  required>Lost<br>
+            <input type="radio" name="reason" value="Defaced"  required>Defaced<br>
+            <input type="radio" name="reason" value="Conversion"  required>conversion<br>
+            <input type="radio" name="reason" value="Designation Change"  required>Designation Change<br>
+            <span class="span-for-errors" id="errForreason">Please enter your Reason For Issue</span>
+        </div>
+        </div>
+        <div class="input-group">
+            <label for="DateofEmployment" class="col-2 col-form-label">Date of Employment</label>
+            <div class="col-5">
+            <input type="date" id="DateofEmployment" required>
+            <span class="span-for-errors" id="errForDateofEmployment">Please enter your Date of Employment</span>
+        </div>
+        </div>
+        <div class="input-group">
+            <label for="emailId" class="col-2 col-form-label">Email Id</label>
+            <div class="col-5">
+            <input type="text" id="emailId" required>
+            <span class="span-for-errors" id="errForemailId">Please enter your Email Id</span>
+        </div>
+        </div>
+        <div class="input-group">
+            <label for="employee_phnum" class="col-2 col-form-label">Employee phone number</label>
+            <div class="col-5">
+            <input type="text" id="employee_phnum" required>
+            <span class="span-for-errors" id="errForemployee_phnum">Please enter your phone number</span>
+        </div>
+        </div>
+        <div class="input-group">
+            <label for="emergency_phnum" class="col-2 col-form-label">Emergency phone number</label>
+            <div class="col-5">
+            <input type="text" id="emergency_phnum" required>
+            <span class="span-for-errors" id="errForemergency_phnum">Please enter your emergency phone number</span><br>
+        </div>
+        </div>
+        <button type="button" onclick="addDetails()">Add Details</button>
     </form>
-    
+    <script src="js/jquery.js "></script>
+    <script src="js/app.js "></script>
 </body>
+
 </html>
