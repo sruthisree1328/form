@@ -180,7 +180,7 @@ function postData() {
     };
     $.ajax({
         type: "POST",
-        url: 'https://form-ee403.firebaseio.com/form.json',
+        url: 'https://form-8cc1a.firebaseio.com/form.json',
         data: JSON.stringify(data),
         success: onPostSuccess,
     });
